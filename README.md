@@ -1,2 +1,2 @@
-# khushi-mittal
-Khushi get-to-know website 
+# Modern Manhattan project
+Khushisphere
