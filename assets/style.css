@@ -2,4 +2,23 @@ h1{
     font-family: 'Inter Tight', sans-serif;
     /* font-weight: 20; */
 }
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Keep items in a vertical stack */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    
+}
 
+.entry {
+    max-width: 800px; /* Limit entry width for readability */
+    width: 100%; /* Take full width */
+    /* Add more styling as needed */
+}
+
+
+img {
+    width: 240px; /* or a specific width */
+    height: 200px; /* or a specific height */
+    max-width: 100%; /* ensures image is responsive and does not exceed its container's width */
+}
