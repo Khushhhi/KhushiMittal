@@ -1,13 +1,23 @@
-h1{
-    font-family: 'Inter Tight', sans-serif;
-    /* font-weight: 20; */
+* {
+    /* font-family: 'Inter Tight', sans-serif; */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 }
 .flex-container {
+    margin-top: 100px;
     display: flex;
     flex-direction: column; /* Keep items in a vertical stack */
     align-items: center; /* Center items horizontally */
     padding: 20px;
     
+}
+
+/* .container > .flex-wrap{
+    margin-right: 2px;
+} */
+
+h1{
+    font-weight: bolder;
 }
 
 .entry {
@@ -16,7 +26,9 @@ h1{
     /* Add more styling as needed */
 }
 
-
+a {
+    color: black;
+}
 img {
     width: 240px; /* or a specific width */
     height: 200px; /* or a specific height */
