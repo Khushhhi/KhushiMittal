@@ -3,6 +3,9 @@
     font-family: 'Manrope', sans-serif;
     /* font-weight: 800; */
 }
+body {
+    background-color: #FFFBF5;
+}
 .flex-container {
     margin-top: 100px;
     display: flex;
@@ -27,7 +30,7 @@ h1{
 }
 
 a {
-    color: blue;
+    color: #59B4C3;
 }
 img {
     width: 240px; /* or a specific width */
