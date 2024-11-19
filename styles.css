@@ -207,3 +207,134 @@ body {
     justify-content: center;
 }
 
+/* Add these new styles for the vault page */
+.vault-section {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    background-color: #fafafa;
+    color: #2c2c2c;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.vault-container {
+    max-width: 700px; /* Narrower container for better readability */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.vault-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.vault-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.riddle {
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    margin: 3rem 0;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.riddle::before,
+.riddle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: #2c2c2c;
+}
+
+.riddle::before { top: 0; }
+.riddle::after { bottom: 0; }
+
+.vault-input {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.vault-input input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.vault-input button {
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.vault-input button:hover {
+    background-color: #444;
+}
+
+#error-message {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: none;
+}
+
+#vault-content {
+    display: none;
+    margin-top: 4rem;
+}
+
+#vault-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.book-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.book-list li strong {
+    font-weight: 500;
+}
+
+.book-list li em {
+    font-style: italic;
+}
+
+/* Add a quote style */
+.quote {
+    font-style: italic;
+    color: #666;
+    border-left: 3px solid #ddd;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .vault-container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .vault-section {
+        padding: 4rem 1rem;
+    }
+}
+

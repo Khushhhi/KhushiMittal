@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault | Khushi Mittal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="./vault.html">Vault</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="vault" class="vault-section">
+        <div class="vault-container">
+            <h2>Vault</h2>
+            <div class="quote">
+                "He that has eyes to see and ears to hear may convince himself that no mortal can keep a secret. If his lips are silent, he chatters with his fingertips; betrayal oozes out of him at every pore." ― Alex michaelides
+            </div>
+            <p>This section contains my book recommendations and everything else that excites me. It's a work in progress. To access it, answer this question:</p>
+            <p class="riddle"><strong>What are you if you are attached to another object by an inclined plane wrapped helically around an axis?</strong></p>
+            
+            <div class="vault-input">
+                <input type="text" id="vault-answer" placeholder="Your answer here">
+                <button onclick="checkAnswer()">Submit</button>
+                <p id="error-message">Incorrect answer! Try again.</p>
+            </div>
+        
+            <div id="vault-content">
+                <!-- <h3>Welcome to the Vault</h3> -->
+                <div class="quote">
+                    "Until I feared I would lose it, I never loved to read. One does not love breathing." ― Harper Lee
+                </div>
+                <p>Some books, TV shows, movies, blogs, articles, and people have had a profound impact on me. 
+                    From learning how to <b>think</b> to feeling strongly for totally fictional characters i'll never meet--these are the part 
+                    of my life that I truly treasure. </p>
+
+
+                     
+                <div>
+                    <h4><u>The best of all time</u></h4>
+                    <ul class="book-list">
+                        <li><em>The Story of Your Life and Others</em> by Ted Chiang</li>
+                        <li><em>I, Robot series</em> by Isaac Asimov</li>
+                        <li><em>Mossad: The Greatest Missions of the Israeli Secret Service</em> by Michael Bar-Zohar, Nissim Mishal</li>
+                        <li><em>The Greatest Minds and Ideas of All Times</em> by Will Durant</li>
+                        <li><em>Dark Matter</em> by Blake Crouch</li>
+                    </ul>
+                </div>
+                <p></p>
+                <div>
+                    <h4><u>Books that make me feel</u></h4>
+                    <ul class="book-list">
+                        <li><em>Forty Rules of Love</em> by Elif Shafak</li>
+                        <li><em>Anxious People</em> by Fredrick Backmann</li>
+                        <li><em>Man's Search for Meaning</em> by Viktor E. Frankl</li>
+                        <li><em>On Earth We're Briefly Gorgeous</em> by Ocean Vuong (writes beautiful poetry)</li>
+                        <li><em>The Heart is a Lonely Hunter</em> by Cardon McCullers</li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function checkAnswer() {
+            const userAnswer = document.getElementById("vault-answer").value.toLowerCase().trim();
+            const vaultContent = document.getElementById("vault-content");
+            const errorMessage = document.getElementById("error-message");
+            
+            // Accept multiple correct answers
+            const correctAnswers = ["screw", "screwed", "a screw", "Screwed", "Screw"];
+            
+            if (correctAnswers.includes(userAnswer)) {
+                vaultContent.style.display = "block";
+                errorMessage.style.display = "none";
+            } else {
+                errorMessage.style.display = "block";
+                vaultContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
