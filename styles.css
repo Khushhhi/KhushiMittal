@@ -1,0 +1,216 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 1rem 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar ul li a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.home-section h1 {
+    font-size: 3rem;
+}
+
+.home-section p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-content p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #2c2c2c;
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.01em;
+}
+
+.about-content a {
+    color: #0066cc;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.about-content a:hover {
+    border-bottom-color: #0066cc;
+}
+
+/* Remove margin from last paragraph to avoid extra space */
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Work Section */
+.work-section {
+    background-color: #f0f0f0;
+    padding: 4rem 2rem;
+}
+
+.work-section h2 {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: white;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    display: block;
+}
+
+/* Footer */
+.footer-section {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-section .social-links {
+    list-style-type: none;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #666;
+}
+
+/* Specific styles for hero section social links */
+.hero-social-links {
+    justify-content: center;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Grid layout for text and image */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two-thirds text, one-third image */
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c2c2c;
+}
+
+.about-text p {
+    margin-bottom: 1.8rem;
+}
+
+.about-text a {
+    color: #0066cc;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.about-text a:hover {
+    border-bottom-color: #0066cc;
+}
+
+/* Styling for the image */
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr; /* Stack text and image vertically */
+        gap: 2rem; /* Adjust gap for smaller screens */
+    }
+
+    .about-image {
+        max-width: 400px; /* Limit the image size */
+        margin: 0 auto; /* Center the image */
+    }
+}
